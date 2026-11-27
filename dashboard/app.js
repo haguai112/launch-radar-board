@@ -161,7 +161,8 @@
     [
       [money(row.implied_value_usd), 'implied launch value'],
       [money(row.tvl_usd), 'TVL in snapshot'],
-      [row.multiple.toFixed(2) + 'x', 'category peer multiple'],
+      [row.multiple.toFixed(2) + 'x', 'fitted peer multiple'],
+      [String(row.peers), 'traded peers in the fit'],
       [row.launch_odds_pct + '%', 'launch odds (model)'],
       [row.change_7d === null ? '-' : (row.change_7d >= 0 ? '+' : '') + row.change_7d.toFixed(1) + '%', 'TVL change, 7 days'],
       [row.years_live === null ? 'unknown' : row.years_live.toFixed(1) + ' yrs', 'live with no token'],
